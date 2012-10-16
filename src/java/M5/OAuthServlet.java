@@ -39,14 +39,6 @@ import org.apache.commons.httpclient.*;
 /**
  * Servlet parameters
  */
-@WebServlet(name = "oauth", urlPatterns = { "/oauth/*", "/oauth" }, initParams = {
-		// clientId is 'Consumer Key' in the Remote Access UI
-		@WebInitParam(name = "clientId", value = "3MVG99OxTyEMCQ3hW7uCHMNSgNHW0KkLbW44utWR8sEbH1kSZvXwkUD6cJq50SCUbA.vwF0vs2zmNc3GN0Qyn"),
-		// clientSecret is 'Consumer Secret' in the Remote Access UI
-		@WebInitParam(name = "clientSecret", value = "5539872502294168234"),
-		// This must be identical to 'Callback URL' in the Remote Access UI
-		@WebInitParam(name = "redirectUri", value = "https://localhost:8443/M5/oauth/_callback"),
-		@WebInitParam(name = "environment", value = "https://login.salesforce.com") })
 
 public class OAuthServlet extends HttpServlet {
 
